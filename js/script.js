@@ -82,7 +82,7 @@ sign_up.onclick() = function () {
     let check_sdt_10 = /\d{10}/g
     let check_sdt_11 = /\d{11}/g
 
-    if (sdt.length == 0 || (!(sdt.match(check_sdt_10)) || !(sdt.match(check_sdt_11)))) {
+    if (sdt.length == 0 || (!(sdt.match(check_sdt_10)) && !(sdt.match(check_sdt_11)))) {
         alert('Số điện thoại không hợp lệ')
     } else {
         cell3.innerHTML = document.getElementById('sodienthoai').value
