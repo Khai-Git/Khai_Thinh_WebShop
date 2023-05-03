@@ -59,22 +59,23 @@ function prev(){
 var sign_up = document.getElementById('dangky')
 
 sign_up.onclick() = function () {
-    let tbl = document.getElementById('sa_DangKy')
+    let tbl = document.getElementById('ds_DangKy')
     let row = tbl.inserRow()
     let cell1 = row.insertCell()
     let cell2 = row.insertCell()
     let cell3 = row.insertCell()
     let cell4 = row.insertCell()
     let cell5 = row.insertCell()
-    let cell6 = row.insertCell()
 
-    let tdn = document.getElementById('tendangnhap').value
+    cell1.innerHTML = document.getElementById('tendangnhap').value
     
     let hvt = document.getElementById('hovaten').value
     let check_hvt = /[A-Z]+[a-z]+\s+/g
     
     if (hvt.length == 0 || !(hvt.match(check_hvt))) {
         alert('Họ và tên không hợp lệ')
+    } else {
+        cell2.innerHTML = document.getElementById('hovaten').value
     }
     
     let sdt = document.getElementById('sodienthoai').value
@@ -83,17 +84,30 @@ sign_up.onclick() = function () {
 
     if (sdt.length == 0 || (!(sdt.match(check_sdt_10)) || !(sdt.match(check_sdt_11)))) {
         alert('Số điện thoại không hợp lệ')
+    } else {
+        cell3.innerHTML = document.getElementById('sodienthoai').value
     }
 
     let email = document.getElementById('email').value
     let check_email = /[a-z]+\d+@[a-z]+[.].+/g
     if (email.length == 0 || !(email.match(check_email))) {
         alert('Email vừa nhập không hợp lệ')
+    } else {
+        cell4.innerHTML = document.getElementById('email').value
     }
     let pass = document.getElementById('password').value
     let passrepeat = document.getElementById('passrepeat').value
 
     if (passrepeat != pass) {
         alert('Mật khẩu không trùng khớp')
+    } else {
+        cell5.innerHTML = document.getElementById('passrepeat').value
     }
+
+    document.getElementById('tendangnhap').value = ""
+    document.getElementById('hovaten').value = ""
+    document.getElementById('sodienthoai').value = ""
+    document.getElementById('email').value = ""
+    document.getElementById('password').value = ""
+    document.getElementById('passrepeat').value = ""
 }
