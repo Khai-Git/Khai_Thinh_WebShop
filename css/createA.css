@@ -1,0 +1,20 @@
+* {box-sizing: border-box}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+h1, label{
+  color: DodgerBlue;
+}
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
