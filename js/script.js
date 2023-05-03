@@ -86,7 +86,10 @@ sign_up.onclick() = function () {
     }
 
     let email = document.getElementById('email').value
-
+    let check_email = /[a-z]+\d+@[a-z]+[.].+/g
+    if (email.length == 0 || !(email.match(check_email))) {
+        alert('Email vừa nhập không hợp lệ')
+    }
     let pass = document.getElementById('password').value
     let passrepeat = document.getElementById('passrepeat').value
 
