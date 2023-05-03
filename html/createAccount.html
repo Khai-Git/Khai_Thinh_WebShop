@@ -13,21 +13,25 @@
             <h1>Form Đăng Ký</h1>
             <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p><hr>
             <label for="Uname"><b>Tên Đăng Nhập</b></label>
-            <input type="text" placeholder="Nhập Tên Đăng Nhập" name="dangnhap" required>
+            <input id="tendangnhap" type="text" placeholder="Nhập Tên Đăng Nhập" name="dangnhap" required>
             <label for="name"><b>Họ và Tên</b></label>
-            <input type="text" placeholder="Nhập Họ và Tên" name="hovaTen" required>
+            <input id="hovaten" type="text" placeholder="Nhập Họ và Tên" name="hovaTen" required>
             <label for="telephone"><b>Số Điện Thoại</b></label>
-            <input type="text" placeholder="Nhập Số Điện Thoại" name="sodienthoai" required>
-           <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Nhập Email" name="email" required>
-           <label for="psw"><b>Mật Khẩu</b></label>
-            <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
-           <label for="psw-repeat"><b>Nhập Lại Mật Khẩu</b></label>
-            <input type="password" placeholder="Nhập Lại Mật Khẩu" name="psw-repeat" required>
-           <div class="clearfix">
-              <button type="submit" class="signupbtn">Sign Up</button>
+            <input id="sodienthoai" type="text" placeholder="Nhập Số Điện Thoại" name="sodienthoai" required>
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="text" placeholder="Nhập Email" name="email" required>
+            <label for="psw"><b>Mật Khẩu</b></label>
+            <input id="password" type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+            <label for="pass-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+            <input id="passrepeat" type="password" placeholder="Nhập Lại Mật Khẩu" name="psw-repeat" required>
+            <div class="clearfix">
+              <button id="dangky" type="submit" class="signupbtn">Sign Up</button>
             </div>
         </div>
     </form>
+    <div hidden>
+        <table id="ds_DangKy"></table>
+    </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
