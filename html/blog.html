@@ -11,6 +11,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/createA.css">
 
 </head>
 <body>
@@ -19,12 +20,12 @@
 
 <header class="header">
 
-    <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> KTV </a>
+    <a href="Home.html" class="logo"> <i class="fas fa-shopping-basket"></i> KTV </a>
 
     <nav class="navbar">
         <a href="home.html">home</a>
         <a href="shop.html">shop</a>
-        <a href="about.html">about</a>
+        <a href="About.html">about</a>
         <a href="review.html">review</a>
         <a href="blog.html">blog</a>
         <a href="contact.html">contact</a>
@@ -87,9 +88,30 @@
         </div>
         <input type="submit" value="login now" class="btn">
         <p>forget password? <a href="#">click here</a></p>
-        <p>don't have an account? <a href="createAccount.html">create one</a></p>
+        <p>don't have an account? <a id="signup-btn">create one</a></p>
     </form>
 
+    <form action="" class="signup-form">
+        <div class="container">
+            <h1>Form Đăng Ký</h1>
+            <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p><hr>
+            <label for="Uname"><b>Tên Đăng Nhập</b></label>
+            <input id="tendangnhap" type="text" placeholder="Nhập Tên Đăng Nhập" name="dangnhap" required>
+            <label for="name"><b>Họ và Tên</b></label>
+            <input id="hovaten" type="text" placeholder="Nhập Họ và Tên" name="hovaTen" required>
+            <label for="telephone"><b>Số Điện Thoại</b></label>
+            <input id="sodienthoai" type="text" placeholder="Nhập Số Điện Thoại" name="sodienthoai" required>
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="text" placeholder="Nhập Email" name="email" required>
+            <label for="psw"><b>Mật Khẩu</b></label>
+            <input id="password" type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+            <label for="pass-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+            <input id="passrepeat" type="password" placeholder="Nhập Lại Mật Khẩu" name="psw-repeat" required>
+            <div class="clearfix">
+              <button id="dangky" type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
 </header>
 
 <!-- header section ends -->
@@ -296,7 +318,9 @@
 
 </section>
 
-<section class="credit"><a href="blog.html"> Back to top </a></section>
+<section class="credit">
+    <button onclick="topFunction()" id="btn_Back_To_Top" title="Go to top">Back To Top</button>
+</section>
 
 <!-- footer section ends -->
 
@@ -313,7 +337,7 @@
 
 
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>

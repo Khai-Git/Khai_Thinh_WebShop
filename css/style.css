@@ -1215,3 +1215,8 @@ section {
     width: 100%;
   }
 }
+
+#btn_Back_To_Top{
+  background-color: transparent;
+  font-size: xx-large;
+}
